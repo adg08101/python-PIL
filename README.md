@@ -1,1 +1,1 @@
-# python-open-cv
+# python-PIL
