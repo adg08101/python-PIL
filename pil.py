@@ -28,7 +28,7 @@ def main(p=15, s=None):
 
 if __name__ == '__main__':
     if len(sys.argv) == 2:
-        main(15, sys.argv[1])
+        main(None, sys.argv[1])
     elif len(sys.argv) == 3:
         main(sys.argv[2], sys.argv[1])
     else:
