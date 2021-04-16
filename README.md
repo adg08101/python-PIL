@@ -1,5 +1,5 @@
 # python-PIL
-py pil.py "<source_folder>"
+py pil.py "<source_folder>" <percent>
 
 Create a directory /source
 

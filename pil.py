@@ -3,11 +3,10 @@ import os
 import sys
 
 
-def main(p, s=None):
-    percent = p / 100
+def main(p=15, s=None):
+    percent = int(p) / 100
     if s is not None:
         source = s
-        print(s)
     else:
         source = 'source'
     store = 'store'
@@ -28,7 +27,9 @@ def main(p, s=None):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1:
+    if len(sys.argv) == 2:
         main(15, sys.argv[1])
+    elif len(sys.argv) == 3:
+        main(sys.argv[2], sys.argv[1])
     else:
-        main(15)
+        main()
