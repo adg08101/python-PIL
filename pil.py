@@ -10,7 +10,7 @@ def main(p):
     dir = os.listdir(source)
     for i in dir:
         print('Resizing file ' + str(i))
-        if i.endswith('.jpg'):
+        if i.endswith('.jpg') or i.endswith('.JPG'):
             dir = source + '\\' + i
             img = Image.open(dir)
             new_img = img.resize((int(img.size[0] * percent), int(img.size[1] * percent)))
