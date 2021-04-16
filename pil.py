@@ -5,6 +5,8 @@ def main(p):
     percent = p / 100
     source = 'source'
     store = 'store'
+    os.mkdir(source)
+    os.mkdir(store)
     dir = os.listdir(source)
     for i in dir:
         if i.endswith('.jpg'):
