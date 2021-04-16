@@ -1,4 +1,6 @@
 # python-PIL
+py pil.py "<source_folder>"
+
 Create a directory /source
 
 put .jpg images into /source,
