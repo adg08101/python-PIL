@@ -36,9 +36,20 @@ def main(p=15, s=None):
 
 if __name__ == '__main__':
     default = 15
+    source = 'source'
+
+    print('Source folder for images?\n For default value (/source) just press Enter:')
+    p_source = input()
+    if p_source == '':
+        p_source = source
+    print('Percent value for images reduction?\n For default value (15%) just press Enter:')
+    p_percent = input()
+    if p_percent == '':
+        p_percent = default
+
     if len(sys.argv) == 2:
         main(default, sys.argv[1])
     elif len(sys.argv) == 3:
         main(sys.argv[2], sys.argv[1])
     else:
-        main()
+        main(p_percent, p_source)
